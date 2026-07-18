@@ -14,7 +14,7 @@ def crackle(time_limit_seconds=10):
         if time.time() - start >= time_limit_seconds:
             return attempts, None # timed out
         for guess in itertools.product(chars, repeat=length):
-            if time.time() - start >= time_limit_seconds:
+            if time.time() - start <= time_limit_seconds:
                 return attempts, guess
             attempts += 1
 
