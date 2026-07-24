@@ -4,8 +4,7 @@ import time
 import crackle_dict
 
 def crackle(time_limit_seconds=10):
-    chars = string.ascii_letters + string.digits + string.punctuation
-    crackle_dict
+    chars = string.ascii_letters + string.digits + string.punctuation + crackle_dict
     attempts = 0
     guess = ""
     start = time.time()
